@@ -4,4 +4,50 @@
   background: var(--main-background-color);
   border-bottom: 1px solid #dbdbdb;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 200px;
+}
+
+#navigation-user-image {
+  height: 22px;
+  width: auto;
+  border-radius: 50%;
+}
+
+#navbar .img-logo {
+  align-self: flex-end;
+}
+
+#navbar .search-area {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#navbar .search-area input[type="search"] {
+  border: 1px solid #dbdbdb;
+  background-color: var(--app-background-color);
+  outline: none;
+  border-radius: 3px;
+  height: 28px;
+  font-size: 14px;
+  width: 215px;
+  padding: 0 5px;
+}
+
+#navbar .search-area input[type="search"]::placeholder {
+  text-align: center;
+}
+
+#navbar .navigation-navbar {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar .navigation-navbar .navigation-navbar-item {
+  margin-right: 25px;
 }
