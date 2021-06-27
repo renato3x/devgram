@@ -2,3 +2,8 @@
   min-height: 100vh;
   background: var(--app-background-color);
 }
+
+#main .routing {
+  min-height: calc(100vh - 54px);
+  padding: 0 200px;
+}

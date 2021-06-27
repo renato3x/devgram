@@ -41,13 +41,18 @@
   text-align: center;
 }
 
-#navbar .navigation-navbar {
+#navbar .navigation .navigation-navbar {
   display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  justify-self: flex-end;
 }
 
-#navbar .navigation-navbar .navigation-navbar-item {
+#navbar .navigation .navigation-navbar .navigation-navbar-item {
   margin-right: 25px;
+}
+
+#navbar .navigation .navigation-navbar .navigation-navbar-item:last-child {
+  margin-right: 0;
 }
