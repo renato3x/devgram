@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --app-background-color: #fafafa;
+  --main-background-color: #ffffff;
+  --main-text-color: #262626;
+  --secondary-text-color: #8e8e8e;
+  --tertiary-text-color: #c7c7c7;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

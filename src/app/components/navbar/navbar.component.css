@@ -1,0 +1,7 @@
+#navbar {
+  min-height: 54px;
+  width: 100vw;
+  background: var(--main-background-color);
+  border-bottom: 1px solid #dbdbdb;
+  box-sizing: border-box;
+}
