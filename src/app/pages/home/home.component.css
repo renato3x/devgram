@@ -7,3 +7,10 @@
   box-sizing: border-box;
   gap: 25px;
 }
+
+#home #main-content .posts-container {
+  height: fit-content;
+  display: grid;
+  grid-auto-rows: auto;
+  gap: 30px;
+}

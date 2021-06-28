@@ -1,0 +1,40 @@
+.post-header {
+  width: 100%;
+  border-bottom: 1px solid #efefef;
+  height: 60px;
+  box-sizing: border-box;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-header .user-data {
+  display: flex;
+  align-items: center;
+}
+
+.post-header .user-data .user-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.post-header .user-data .user-name:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.post-header .user-data .user-img {
+  height: fit-content;
+  display: flex;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.post-header .user-data .user-img img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+}

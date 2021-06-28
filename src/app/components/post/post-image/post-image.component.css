@@ -1,0 +1,9 @@
+.post-image {
+  width: 100%;
+  display: flex;
+}
+
+.post-image img {
+  width: 100%;
+  object-fit: cover;
+}

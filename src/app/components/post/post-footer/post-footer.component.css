@@ -1,0 +1,115 @@
+.post-footer {
+  padding: 10px;
+}
+
+.post-footer .actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-footer .actions .actions-container .action-button {
+  background: none;
+  border: none;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.post-footer .actions .actions-container .action-button + .action-button {
+  margin-left: 10px;
+}
+
+.post-footer .actions .actions-container .action-button:hover {
+  cursor: pointer;
+}
+
+.post-footer .likes {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.post-footer .likes .user-img {
+  display: flex;
+}
+
+.post-footer .likes .user-img img {
+  width: 20px;
+  height: 20px;  
+  border-radius: 50%;
+}
+
+.post-footer .likes .likedby {
+  margin-left: 10px;
+}
+
+.post-footer .likes .likedby b:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.post-footer .comments {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-footer .comments .comment {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.post-footer .comments .comment .comment-author {
+  font-weight: 600;
+}
+
+.post-footer .comments .comment .comment-author:hover {
+  text-decoration: underline;
+}
+
+.post-footer .timestamp {
+  display: inline-block;
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  font-size: 10px;
+}
+
+.new-comment {
+  display: flex;
+  height: 56px;
+  align-items: center;
+  border-top: 1px solid #efefef;
+  padding: 0 16px;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+button.post {
+  color: var(--blue);
+  font-weight: 600;
+  transition: all .1s;
+}
+
+button.post:disabled {
+  cursor: default;
+  color: var(--filtered-blue);
+}
+
+button.post {
+  cursor: pointer;
+}
+
+.comment-input {
+  flex-grow: 1; 
+  margin: 10px; 
+  border: none; 
+  outline: none;
+}
