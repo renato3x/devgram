@@ -38,3 +38,10 @@
   object-fit: cover;
   border-radius: 50%;
 }
+
+.post-header .actions .btn-actions {
+  background: none;
+  border: none;
+  font-size: 0;
+  cursor: pointer;
+}
