@@ -8,9 +8,11 @@ import * as faker from 'faker'
 })
 export class PostImageComponent implements OnInit {
 
+  imageLink: string = this.generateImageLink()
+
   constructor() { }
 
-  get imageLink(): string {
+  generateImageLink(): string {
     let width = Math.round(Math.random() * 600)
     let height = Math.round(Math.random() * 600)
     

@@ -17,5 +17,4 @@ export class PostHeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

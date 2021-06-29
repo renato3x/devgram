@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   }
 
   generateFakeData() {
-    let quantityOfData = faker.datatype.number(150)
+    let quantityOfData = faker.datatype.number(50)
     let users: User[] = []
 
     let i = 0

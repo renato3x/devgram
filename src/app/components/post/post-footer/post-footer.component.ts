@@ -10,15 +10,23 @@ export class PostFooterComponent implements OnInit {
 
   @Input() username!: string
 
+  pulse: boolean = false
+  saveChecked: boolean = false
+  likeChecked: boolean = false
   randomUserImage: string = faker.image.avatar()
   randomUsername: string = faker.internet.userName().toLowerCase()
-  randomNumber: number = faker.datatype.number(3000)
+  randomNumber: number = faker.datatype.number(999)
   commentary: string = faker.lorem.sentence()
   comment: string = ''
 
   constructor() { }
 
   ngOnInit(): void {
-    
+  }
+
+  changeLikeCheckedValue() {
+    this.pulse = true
+    this.likeChecked = !this.likeChecked
+    setTimeout(() => this.pulse = false, 300)
   }
 }
