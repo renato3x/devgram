@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import * as faker from 'faker'
 
 @Component({
   selector: 'post-footer',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostFooterComponent implements OnInit {
 
-  userImageSource: string = '../../../../assets/img/user.jpg'
+  @Input() username!: string
+
+  randomUserImage: string = faker.image.avatar()
+  randomUsername: string = faker.internet.userName().toLowerCase()
+  randomNumber: number = faker.datatype.number(3000)
+  commentary: string = faker.lorem.sentence()
   comment: string = ''
 
   constructor() { }

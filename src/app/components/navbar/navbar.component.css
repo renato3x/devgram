@@ -14,8 +14,9 @@
 
 #navigation-user-image {
   height: 22px;
-  width: auto;
+  width: 22px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 #navbar .img-logo {

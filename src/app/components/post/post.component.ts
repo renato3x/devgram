@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'post',
@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent implements OnInit {
+
+  @Input()
+  username!: string
+
+  @Input()
+  userImageSource!: string
 
   constructor() { }
 

@@ -27,20 +27,15 @@
   </div>
   <div class="likes">
     <span class="user-img">
-      <img [src]="userImageSource" alt="">
+      <img [src]="randomUserImage" alt="">
     </span>
     <span class="likedby">
-      Liked by <b>petter_</b>
+      Liked by <b>{{ randomUsername }}</b> and <b style="text-decoration: none;">{{ randomNumber }} others</b>
     </span>
   </div>
   <div class="comments">
     <span class="comment">
-      <span class="comment-author">
-        petter_
-      </span>
-      <div class="span-comment-content">
-        This is so beautiful!
-      </div>
+      <span class="comment-author">{{ username }}</span> <span class="comment-content">{{ commentary }}</span>
     </span>
   </div>
   <span class="timestamp">1 Hour ago</span>

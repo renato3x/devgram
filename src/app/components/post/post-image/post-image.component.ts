@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as faker from 'faker'
 
 @Component({
   selector: 'post-image',

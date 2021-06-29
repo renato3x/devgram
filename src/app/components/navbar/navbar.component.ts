@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   instagramLogoSource: string =  'https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png'
-  userImageSource: string = '../../../assets/img/user.jpg'
+  userImageSource: string = '../../../assets/img/me.jpg'
 
   constructor() { }
 

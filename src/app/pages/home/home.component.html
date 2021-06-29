@@ -1,31 +1,11 @@
 <div id="home">
   <main id="main-content">
     <div class="posts-container">
-      <post>
-        <post-header></post-header>
-        <post-image></post-image>
-        <post-footer></post-footer>
-      </post>
-      <post>
-        <post-header></post-header>
-        <post-image></post-image>
-        <post-footer></post-footer>
-      </post>
-      <post>
-        <post-header></post-header>
-        <post-image></post-image>
-        <post-footer></post-footer>
-      </post>
-      <post>
-        <post-header></post-header>
-        <post-image></post-image>
-        <post-footer></post-footer>
-      </post>
-      <post>
-        <post-header></post-header>
-        <post-image></post-image>
-        <post-footer></post-footer>
-      </post>
+      <post 
+        *ngFor="let user of users" 
+        [username]="user.username" 
+        [userImageSource]="user.userImageSource"
+      ></post>
     </div>
   </main>
   <aside>

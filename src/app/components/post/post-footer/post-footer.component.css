@@ -38,6 +38,7 @@
   width: 20px;
   height: 20px;  
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .post-footer .likes .likedby {
@@ -67,6 +68,10 @@
 
 .post-footer .comments .comment .comment-author:hover {
   text-decoration: underline;
+}
+
+.post-footer .comments .comment .comment-content {
+  margin-left: 3px;
 }
 
 .post-footer .timestamp {
