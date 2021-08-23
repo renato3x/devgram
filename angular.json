@@ -10,7 +10,11 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
-          "strict": true
+          "strict": true,
+          "skipTests": true
+        },
+        "@schematics/angular:component": {
+          "skipTests": true
         }
       },
       "root": "",
