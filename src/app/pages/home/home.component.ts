@@ -8,10 +8,10 @@ import * as faker from 'faker'
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  
   users: User[] = []
 
   constructor() {
+    faker.setLocale('pt_BR')
     this.users = this.generateFakeData()
   }
 
@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
 
     let i = 0
     while (i < quantityOfData) {
-      users.push({ username: faker.internet.userName().toLowerCase(), userImageSource: faker.image.avatar() })
+      users.push({ username: faker.internet.userName().toLowerCase(), userImageSource: `https://i.pravatar.cc/${faker.datatype.number(1000)}` })
       i++
     }
 

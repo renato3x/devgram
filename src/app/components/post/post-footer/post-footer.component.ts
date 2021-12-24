@@ -13,13 +13,15 @@ export class PostFooterComponent implements OnInit {
   pulse: boolean = false
   saveChecked: boolean = false
   likeChecked: boolean = false
-  randomUserImage: string = faker.image.avatar()
+  randomUserImage: string = `https://i.pravatar.cc/${faker.datatype.number(1000)}`
   randomUsername: string = faker.internet.userName().toLowerCase()
   randomNumber: number = faker.datatype.number(999)
   commentary: string = faker.lorem.sentence()
   comment: string = ''
 
-  constructor() { }
+  constructor() {
+    faker.setLocale('pt_BR')
+  }
 
   ngOnInit(): void {
   }
