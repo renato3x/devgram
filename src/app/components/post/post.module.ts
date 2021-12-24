@@ -18,10 +18,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   exports: [
-    PostComponent,
-    PostHeaderComponent,
-    PostImageComponent,
-    PostFooterComponent
+    PostComponent
   ]
 })
 export class PostModule { }

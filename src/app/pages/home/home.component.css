@@ -14,3 +14,9 @@
   grid-auto-rows: auto;
   gap: 30px;
 }
+
+#home #infos {
+  position: sticky;
+  top: 84px;
+  height: 500px;
+}

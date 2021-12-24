@@ -1,0 +1,50 @@
+<div id="aside-data">
+  <div class="user-infos">
+    <img [src]="userImageSource" alt="access my github :) https://github.com/renato3x" class="user-img">
+    <div class="user-name-infos">
+      <span class="user-username">Renato3x</span>
+      <span class="user-name">Renato</span>
+    </div>
+    <button class="btn">Mudar</button>
+  </div>
+
+  <div class="suggestions">
+    <div class="suggestions-heading">
+      <h2>Sugestões para você</h2>
+
+      <button class="btn black">Ver tudo</button>
+    </div>
+    <div class="suggestions-wrapper">
+      <div class="suggestion" *ngFor="let user of users">
+        <img [src]="user.userImageSource" alt="" class="user-suggestion-avatar">
+        <div class="user-suggestion-data">
+          <span class="user-username">{{ user.username }}</span>
+          <span class="user-info">Sugestões para você</span>
+        </div>
+        <button class="btn">Mudar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="insta-infos">
+    <ul class="insta-infos-list">
+      <li class="insta-info">Sobre</li>
+      <li class="insta-info">Ajuda</li>
+      <li class="insta-info">Imprensa</li>
+      <li class="insta-info">API</li>
+      <li class="insta-info">Carreiras</li>
+      <li class="insta-info">Privacidade</li>
+    </ul>
+    <ul class="insta-infos-list">
+      <li class="insta-info">Termos</li>
+      <li class="insta-info">Localizações</li>
+      <li class="insta-info">Principais Contas</li>
+      <li class="insta-info">Hashtags</li>
+      <li class="insta-info">Idioma</li>
+    </ul>
+
+    <h2>
+      &copy; {{ year }} INSTAGRAM FROM META
+    </h2>
+  </div>
+</div>
