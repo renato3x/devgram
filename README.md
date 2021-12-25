@@ -6,6 +6,10 @@ This application created with Angular is intended to put my knowledge of this te
 
 This App, each time the page loads, generates a different amount of different posts and different users. This mechanic is done using the **Faker** library.
 
+## App
+
+![App Screenshot](./.github/app_screenshot.png)
+
 ## Setup
 
 Install all packages:
