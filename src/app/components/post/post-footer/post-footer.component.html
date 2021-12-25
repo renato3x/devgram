@@ -53,6 +53,6 @@
       <path d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z"></path>
     </svg>
   </button>
-  <input type="text" placeholder="Add a comment..." [(ngModel)]="comment" required minlength="1" #commentInput="ngModel" name="comment" class="comment-input">
+  <input type="text" placeholder="Adicione um comentário..." [(ngModel)]="comment" required minlength="1" #commentInput="ngModel" name="comment" class="comment-input">
   <button type="button" [disabled]="commentInput.invalid" class="post">Post</button>
 </div>

@@ -1,0 +1,58 @@
+#stories {
+  background: var(--main-background-color);
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding: 16px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+#stories .stories-container {
+  display: flex;
+  max-width: 591px;
+  transition: transform .2s ease-in;
+}
+
+#stories .stories-container .story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+#stories .stories-container .story + .story {
+  margin-left: 6px;
+}
+
+#stories .stories-container .story-user-img {
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box, linear-gradient(to right, 	#feda75, #fa7e1e, #d62976) border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#stories .stories-container .story-user-img img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#stories .stories-container .story-username {
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 5px;
+  text-overflow: ellipsis;
+  display: inline-block;
+  width: 74px;
+  overflow: hidden;
+  text-align: center;
+}
