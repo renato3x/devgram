@@ -44,7 +44,7 @@
       <span class="comment-author">{{ username }}</span> <span class="comment-content">{{ commentary }}</span>
     </span>
   </div>
-  <span class="timestamp">1 Hour ago</span>
+  <span class="timestamp">{{randomHour > 1? randomHour + " Hours ago": randomHour + " Hour ago" }}</span>
 </div>
 <div class="new-comment">
   <button class="emoji">

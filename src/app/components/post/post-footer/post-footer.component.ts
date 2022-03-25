@@ -10,6 +10,8 @@ export class PostFooterComponent implements OnInit {
 
   @Input() username!: string
 
+  randomHour: number = Math.floor(Math.random() * 24)
+
   pulse: boolean = false
   saveChecked: boolean = false
   likeChecked: boolean = false
