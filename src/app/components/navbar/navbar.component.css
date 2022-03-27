@@ -1,27 +1,25 @@
 #navbar {
-  min-height: 54px;
+  min-height: 80px;
   width: 100vw;
   background: var(--main-background-color);
   border-bottom: 1px solid #dbdbdb;
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 5px 200px;
-  position: sticky;
-  top: 0;
-  z-index: 10000;
+  
 }
 
 #navigation-user-image {
   height: 22px;
   width: 22px;
   border-radius: 50%;
-  object-fit: cover;
 }
 
 #navbar .img-logo {
-  align-self: flex-end;
+
+  margin-right: 50px;
 }
 
 #navbar .search-area {
@@ -59,4 +57,19 @@
 
 #navbar .navigation .navigation-navbar .navigation-navbar-item:last-child {
   margin-right: 0;
+}
+
+.navigation{
+  margin-left: 50px
+}
+
+@media (max-width: 800px){
+  .search-area, #search{
+    display: none;
+  }
+
+  #navbar{
+    justify-content: space-evenly;
+  }
+  
 }

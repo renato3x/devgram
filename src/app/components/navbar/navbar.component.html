@@ -1,7 +1,7 @@
 <nav id="navbar">
   <div class="img-logo">
     <a href="#">
-      <img [src]="instagramLogoSource" alt="Instagram - Logo">
+      <img [src]="instagramLogoSource" alt="Instagram - Logo" routerLink="">
     </a>
   </div>
 
@@ -40,8 +40,8 @@
         </a>
       </li>
       <li class="navigation-navbar-item">
-        <a href="#">
-          <img [src]="userImageSource" alt="User image" id="navigation-user-image">
+        <a href="#" >
+          <img routerLink="/soulcodeacademy" [src]="userImageSource" alt="User image" id="navigation-user-image">
         </a>
       </li>
     </ul>

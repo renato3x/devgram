@@ -1,3 +1,13 @@
+@media(max-width: 900px){
+  div {
+    
+    display: none;
+  }
+  
+  }
+  
+
+
 #aside-data {
   height: 100%;
   padding: 20px 0;

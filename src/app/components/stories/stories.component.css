@@ -56,3 +56,9 @@
   overflow: hidden;
   text-align: center;
 }
+
+
+#stories {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
