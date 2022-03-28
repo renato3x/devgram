@@ -36,7 +36,7 @@
 
 .post-footer .likes .user-img img {
   width: 20px;
-  height: 20px;  
+  height: 20px;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -113,9 +113,9 @@ button.post {
 }
 
 .comment-input {
-  flex-grow: 1; 
-  margin: 10px; 
-  border: none; 
+  flex-grow: 1;
+  margin: 10px;
+  border: none;
   outline: none;
 }
 
@@ -132,4 +132,9 @@ button.post {
   } 100% {
     transform: scale(1);
   }
+}
+
+.action-button:hover {
+  background-color: rgb(105, 101, 101);
+
 }

@@ -1,3 +1,19 @@
+/*
+================
+Escola: SoulCode
+Curso: Java Full Stack
+Turma: BXW13
+Projeto: Devgram
+Professor: Renato (git: Renato3x)
+Grupo 3
+Aluna: Pollyana Oliveira Martins Ferreira (git: PollyanaOliveira1983)
+=================
+Componente: stories.component.css
+TAG de alteração              : Alteração
+<<PollyanaOliveira1983_001D>> : Criação do estilo da FORMATAÇÃO do botão ("voltar" e "ir") e imagem do stories
+=================
+*/
+
 #stories {
   background: var(--main-background-color);
   border: 1px solid #dbdbdb;
@@ -56,3 +72,56 @@
   overflow: hidden;
   text-align: center;
 }
+
+/* INICIO <<PollyanaOliveira1983_001D>> */
+#voltar {
+  position: absolute;
+  left: 10px;
+  bottom: 60px;
+}
+
+#ir {
+  position: absolute;
+  right: 10px;
+  bottom: 60px;
+ }
+
+
+ button {
+
+  appearance: auto;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  box-sizing: border-box;
+  background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+  margin: 0em;
+  padding: 1px 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+
+}
+
+.story-user-img {
+  transition: transform 0.5s;
+}
+
+.story-user-img :hover {
+  transform: scale(1.2);
+}
+/* FIM <<PollyanaOliveira1983_001D>> */
