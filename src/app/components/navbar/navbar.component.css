@@ -6,7 +6,7 @@
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding: 5px 200px;
   
 }
@@ -69,7 +69,7 @@
   }
 
   #navbar{
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
   
 }
