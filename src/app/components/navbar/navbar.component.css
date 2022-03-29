@@ -35,9 +35,9 @@
   background-color: var(--app-background-color);
   outline: none;
   border-radius: 3px;
-  height: 28px;
+  height: 45px;
   font-size: 14px;
-  width: 215px;
+  width: 400px;
   padding: 0 5px;
 }
 

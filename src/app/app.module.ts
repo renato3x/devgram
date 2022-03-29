@@ -7,17 +7,22 @@ import { HomeComponent } from './pages/home/home.component';
 import { PostModule } from './components/post/post.module';
 import { AsideDataComponent } from './components/aside-data/aside-data.component';
 import { StoriesModule } from './components/stories/stories.module';
+import { FooterComponent } from './components/footer/footer.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    AsideDataComponent
+    AsideDataComponent,
+    FooterComponent
+   
   ],
   imports: [
     BrowserModule,
     PostModule,
-    StoriesModule
+    StoriesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
