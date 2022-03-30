@@ -56,6 +56,10 @@
   flex-direction: column;
 }
 
+.comment{
+  margin-top: 5px;
+}
+
 .post-footer .comments .comment {
   display: flex;
   align-items: center;

@@ -43,6 +43,9 @@
     <span class="comment">
       <span class="comment-author">{{ username }}</span> <span class="comment-content">{{ commentary }}</span>
     </span>
+    <span class="comment" *ngFor="let comment of commentary_user">
+      <span class="comment-author">Renato3x</span> <span class="comment-content">{{comment }}</span>
+    </span>
   </div>
   <span class="timestamp">{{randomHour > 1? randomHour + " Hours ago": randomHour + " Hour ago" }}</span>
 </div>
@@ -54,5 +57,5 @@
     </svg>
   </button>
   <input type="text" placeholder="Adicione um comentário..." [(ngModel)]="comment" required minlength="1" #commentInput="ngModel" name="comment" class="comment-input">
-  <button type="button" [disabled]="commentInput.invalid" class="post">Post</button>
+  <button (click)="makeComment()" [disabled]="commentInput.invalid" class="post">Post</button>
 </div>

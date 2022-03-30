@@ -20,6 +20,9 @@ export class PostFooterComponent implements OnInit {
   randomNumber: number = faker.datatype.number(999)
   commentary: string = faker.lorem.sentence()
   comment: string = ''
+  commentary_user: String[] = []
+  seeComment: boolean = false;
+
 
   constructor() {
     faker.setLocale('pt_BR')
@@ -28,9 +31,15 @@ export class PostFooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  changeLikeCheckedValue() {
+  changeLikeCheckedValue():void {
     this.pulse = true
     this.likeChecked = !this.likeChecked
     setTimeout(() => this.pulse = false, 300)
+  }
+
+  makeComment(): void{
+    this.seeComment = true;
+    this.commentary_user.push(this.comment);
+    this.comment = ''
   }
 }
