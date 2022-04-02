@@ -1,11 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from "@angular/router";
-import { PerfilComponent } from './components/perfil/perfil.component';
 import { HomeComponent } from "./pages/home/home.component";
 
 const routes: Routes = [
-  
-  
+    
   {
     path: '',
     pathMatch: 'full',     
@@ -14,8 +12,13 @@ const routes: Routes = [
 
   {
     path: 'soulcodeacademy',
-    component: PerfilComponent
+    loadChildren: ()=> import('./components/perfil/perfil.module').then(m=> m.PerfilModule)
+  },
+  {
+    path: 'components',
+    loadChildren: ()=> import('./components/component.module').then(m=> m.ComponentModule)
   }
+
 ];
 
 @NgModule({
