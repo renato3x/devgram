@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild, OnInit } from '@angular/core';
 import { User } from 'src/app/interfaces/user';
 import * as faker from 'faker'
 
@@ -13,6 +13,7 @@ export class StoriesComponent {
 
   constructor() {}
 
+ 
   generateStories(): User[] {
     let storiesQuantity = 0
 
