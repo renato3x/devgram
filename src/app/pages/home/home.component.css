@@ -1,14 +1,14 @@
 #home {
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  width: 80vw;
   justify-content: center;
 }
 
 #home #main-content {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 65%;
   padding-right: 30px;
 
 }
