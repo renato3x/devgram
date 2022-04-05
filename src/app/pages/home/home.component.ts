@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(){
     setTimeout(() => {  
       this.publications = true;
-    }, 30000)
+    }, 1000)
  }
 
  
