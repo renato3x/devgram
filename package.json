@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "~12.0.2",
     "@angular/router": "~12.0.2",
     "faker": "^5.5.3",
+    "ngx-infinite-scroll": "^10.0.0",
     "normalize.css": "^8.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.1",
