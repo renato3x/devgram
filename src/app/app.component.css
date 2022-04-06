@@ -9,3 +9,10 @@
   min-height: calc(100vh - 54px);
   padding: 0 200px;
 }
+
+@media (max-width: 620px){
+  #main .content {
+    min-height: calc(100vh - 54px);
+    padding:5px;
+  }
+}
