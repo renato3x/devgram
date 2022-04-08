@@ -60,3 +60,21 @@
 #navbar .navigation .navigation-navbar .navigation-navbar-item:last-child {
   margin-right: 0;
 }
+
+@media (max-width: 550px){ 
+  #navbar .search-area {
+    display: none;
+  }
+
+  #navbar{
+    padding: 0;
+  }
+
+  #navbar .img-logo {
+    padding: 10px 20px 6px 20px;
+  }
+  .navigation{
+    padding-right: 15px;
+  }
+
+ }

@@ -61,9 +61,14 @@
 }
 
 .post-footer .comments .comment {
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
+  display: inline;
+  align-items: unset;
   justify-content: start;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .post-footer .comments .comment .comment-author {
@@ -137,3 +142,6 @@ button.post {
     transform: scale(1);
   }
 }
+
+@media (max-width: 550px){  
+    }

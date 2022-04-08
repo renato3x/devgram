@@ -42,5 +42,22 @@
   box-shadow: 0px 0px 25px -6px grey;
 }
 
+@media (max-width: 550px){  
+#home #main-content .posts-container {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+#home{
+  padding-top: 0;
+}
 
+#div-publi{
+  justify-content: center;
+  right: 30%;
+  left: 30%;
+}
 
+#infos{
+  display: none;
+}
+}

@@ -5,3 +5,8 @@
   border: 1px solid #dbdbdb;
   border-radius: 3px;
 }
+@media (max-width: 550px){  
+
+  .post{
+  width: 100vw;}
+}

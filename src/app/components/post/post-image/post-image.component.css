@@ -7,3 +7,14 @@
   width: 100%;
   object-fit: cover;
 }
+
+@media (max-width: 550px){  
+  .post-image {
+    width: 100vw;
+    display: flex;
+  }
+  .post-image img {
+    width: 100vw;  
+    object-fit: cover;
+  }
+}

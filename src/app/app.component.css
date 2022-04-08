@@ -9,3 +9,14 @@
   min-height: calc(100vh - 54px);
   padding: 0 200px;
 }
+
+@media (max-width: 550px){  
+  #main{
+    width: 100vw;
+  }
+  #main .content{
+    width: 100vw;
+    display: flex;
+    padding: 0px;
+  }
+}
