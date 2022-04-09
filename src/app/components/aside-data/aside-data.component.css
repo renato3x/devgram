@@ -16,6 +16,8 @@
   color: var(--main-text-color);
 }
 
+
+
 /* top styles */
 
 #aside-data .user-infos {
@@ -37,6 +39,10 @@
   justify-content: center;
   flex-grow: 1;
   margin-left: 20px;
+}
+
+#aside-data .user-infos .user-name-infos h3{
+  margin: 0;
 }
 
 #aside-data .user-infos .user-name-infos .user-username {
@@ -65,8 +71,19 @@
   color: var(--secondary-text-color);
 }
 
+#aside-data h3{
+  margin: 0px 0 0px 0;
+}
+
+#aside-data p{
+  margin: 0;
+}
+
 #aside-data .suggestions .suggestions-wrapper {
   padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 #aside-data .suggestions .suggestion {
@@ -124,6 +141,7 @@
   align-items: flex-start;
   padding: 0 40px 0 0;
   margin: 0;
+  gap: 5px;
 }
 
 .insta-infos .insta-infos-list + .insta-infos-list {

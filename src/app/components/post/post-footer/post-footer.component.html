@@ -32,22 +32,22 @@
     </div>
   </div>
   <div class="likes">
-    <span class="user-img">
+    <div class="user-img">
       <img [src]="randomUserImage" alt="">
-    </span>
+    </div>
     <span class="likedby">
       Liked by <b>{{ randomUsername }}</b> and <b style="text-decoration: none;">{{ randomNumber }} others</b>
     </span>
   </div>
-  <div class="comments">
-    <span class="comment">
-      <span class="comment-author">{{ username }}</span> <span class="comment-content">{{ commentary }}</span>
-    </span>
-    <span class="comment" *ngFor="let comment of commentary_user">
-      <span class="comment-author">Renato3x</span> <span class="comment-content">{{comment}}</span>
-    </span>
-  </div>
-  <span class="timestamp">{{randomHour > 1? randomHour + " Hours ago": randomHour + " Hour ago" }}</span>
+  <ul class="comments">
+    <li class="comment">
+      <h3 class="comment-author">{{ username }}</h3> <p class="comment-content">{{ commentary }}</p>
+    </li>
+    <li class="comment" *ngFor="let comment of commentary_user">
+      <h3 class="comment-author">Renato3x</h3> <p class="comment-content">{{comment}}</p>
+    </li>
+  </ul>
+  <time class="timestamp">{{randomHour > 1? randomHour + " Hours ago": randomHour + " Hour ago" }}</time>
 </div>
 <div class="new-comment">
   <button class="emoji">

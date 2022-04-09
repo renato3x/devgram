@@ -1,7 +1,7 @@
 .post-header {
   width: 100%;
   border-bottom: 1px solid #efefef;
-  height: 60px;
+  height: 80px;
   box-sizing: border-box;
   padding: 5px 20px;
   display: flex;
@@ -15,8 +15,8 @@
 }
 
 .post-header .user-data .user-name {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 700;
   margin-left: 10px;
 }
 
@@ -33,8 +33,8 @@
 }
 
 .post-header .user-data .user-img img {
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 42px;
   object-fit: cover;
   border-radius: 50%;
 }

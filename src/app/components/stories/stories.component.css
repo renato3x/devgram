@@ -67,13 +67,14 @@
 #stories .stories-container .story-username {
   font-size: 12px;
   cursor: pointer;
-  margin-top: 5px;
+  margin: 5px 0 0 0;
   text-overflow: ellipsis;
   display: inline-block;
   width: 74px;
   overflow: hidden;
   text-align: center;
 }
+
 
 @media (max-width: 550px){  
   #stories{

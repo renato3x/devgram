@@ -2,8 +2,8 @@
   <div class="user-infos">
     <img [src]="userImageSource" alt="access my github :) https://github.com/renato3x" class="user-img">
     <div class="user-name-infos">
-      <span class="user-username">Renato3x</span>
-      <span class="user-name">Renato</span>
+      <h3 class="user-username">Renato3x</h3>
+      <h3 class="user-name">Renato</h3>
     </div>
     <button class="btn">Mudar</button>
   </div>
@@ -18,8 +18,8 @@
       <div class="suggestion" *ngFor="let user of users">
         <img [src]="user.userImageSource" alt="" class="user-suggestion-avatar">
         <div class="user-suggestion-data">
-          <span class="user-username">{{ user.username }}</span>
-          <span class="user-info">Sugestões para você</span>
+          <h3 class="user-username">{{ user.username }}</h3>
+          <p class="user-info">Sugestões para você</p>
         </div>
         <button class="btn">Seguir</button>
       </div>
@@ -28,19 +28,41 @@
 
   <div class="insta-infos">
     <ul class="insta-infos-list">
-      <a href="https://about.instagram.com/" target="_blank"><li class="insta-info"> Sobre</li></a>
-      <a href="https://help.instagram.com/" target="_blank"><li class="insta-info"> Ajuda</li></a>
-      <a href="https://about.instagram.com/blog"><li class="insta-info"> </li></a>
-      <li class="insta-info">API</li>
-      <li class="insta-info">Carreiras</li>
-      <li class="insta-info">Privacidade</li>
+      <a href="https://about.instagram.com/" target="_blank">
+        <li class="insta-info"> Sobre</li>
+      </a>
+      <a href="https://help.instagram.com/" target="_blank">
+        <li class="insta-info"> Ajuda</li>
+      </a>
+      <a href="https://about.instagram.com/blog">
+        <li class="insta-info">Imprensa</li>
+      </a>
+      <a href="https://developers.facebook.com/docs/instagram" target="_blank">
+        <li class="insta-info">API</li>
+      </a>
+      <a href="https://about.instagram.com/about-us/careers" target="_blank">
+        <li class="insta-info">Carreiras</li>
+      </a>
+      <a href="https://help.instagram.com/519522125107875/?maybe_redirect_pol=0" target="_blank">
+        <li class="insta-info">Privacidade</li>
+      </a>
     </ul>
     <ul class="insta-infos-list">
-      <li class="insta-info">Termos</li>
-      <li class="insta-info">Localizações</li>
-      <li class="insta-info">Principais Contas</li>
-      <li class="insta-info">Hashtags</li>
-      <li class="insta-info">Idioma</li>
+      <a href="https://help.instagram.com/581066165581870" target="_blank">
+        <li class="insta-info">Termos</li>
+      </a>
+      <a href="https://www.instagram.com/explore/locations/" target="_blank">
+        <li class="insta-info">Localizações</li>
+      </a>
+      <a href="https://www.instagram.com/directory/profiles/" target="_blank">
+        <li class="insta-info">Principais Contas</li>
+      </a>
+      <a href="https://www.instagram.com/directory/hashtags/" target="_blank">
+        <li class="insta-info">Hashtags</li>
+      </a>
+      <a href="" target="_blank">
+        <li class="insta-info">Idioma</li>
+      </a>
     </ul>
 
     <h2>

@@ -35,14 +35,15 @@
 }
 
 .post-footer .likes .user-img img {
-  width: 20px;
-  height: 20px;  
+  width: 30px;
+  height: 30px;  
   border-radius: 50%;
   cursor: pointer;
 }
 
 .post-footer .likes .likedby {
   margin-left: 10px;
+  font-size: 13pt;
 }
 
 .post-footer .likes .likedby b:hover {
@@ -51,13 +52,13 @@
 }
 
 .post-footer .comments {
-  margin-top: 10px;
+  padding-left: 0;
   display: flex;
   flex-direction: column;
 }
 
 .comment{
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .post-footer .comments .comment {
@@ -72,8 +73,11 @@
 }
 
 .post-footer .comments .comment .comment-author {
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 12pt;
+  display: inline;
 }
+
 
 .post-footer .comments .comment .comment-author:hover {
   text-decoration: underline;
@@ -81,6 +85,7 @@
 
 .post-footer .comments .comment .comment-content {
   margin-left: 3px;
+  display: inline;
 }
 
 .post-footer .timestamp {
