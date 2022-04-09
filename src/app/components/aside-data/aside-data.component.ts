@@ -15,6 +15,7 @@ export class AsideDataComponent {
 
   constructor() {}
 
+  
   generateUsers() {
     let users: User[] = []
 
@@ -23,5 +24,10 @@ export class AsideDataComponent {
     }
 
     return users
+  }
+
+  Seguir(element:any, text:any){ //Metodo adicionado para trocar a cor e o texto do botão "seguir"
+    element.textContent=text;
+    element.style.color='black';
   }
 }
