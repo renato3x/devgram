@@ -136,6 +136,10 @@
   margin: 0;
 }
 
+.user-username, .user-img, .user-name {
+  cursor: pointer;
+}
+
 .insta-infos .insta-infos-list + .insta-infos-list {
   margin-top: 5px;
 }
