@@ -45,7 +45,7 @@ export class HomeComponent implements OnInit {
    onScroll(){
 
      this.contador ++;
-     
+     console.log
     if(this.contador > 10){
       this.NewPost()
       this.contador = 0
