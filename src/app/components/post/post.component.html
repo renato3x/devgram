@@ -1,6 +1,6 @@
 <div class="post">
   <post-header [username]="username" [userImageSource]="userImageSource"></post-header>
-  <post-image></post-image>
+  <post-image (dblclick)="changeLikeCheckedValue()" ></post-image>
   <post-footer [username]="username"></post-footer>
 </div>
 

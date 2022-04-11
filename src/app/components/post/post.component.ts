@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
+import { PostFooterComponent } from './post-footer/post-footer.component';
 
 @Component({
   selector: 'post',
@@ -16,5 +17,10 @@ export class PostComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  @ViewChild(PostFooterComponent) postFooterComponent: any;
+  changeLikeCheckedValue(): void {
+    this.postFooterComponent.changeLikeCheckedValue();
   }
 }

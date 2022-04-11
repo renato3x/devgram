@@ -15,13 +15,15 @@
       <button class="btn black">Ver tudo</button>
     </div>
     <div class="suggestions-wrapper">
-      <div class="suggestion" *ngFor="let user of users">
+      <div class="suggestion" *ngFor="let user of users, index as j">
         <img [src]="user.userImageSource" alt="" class="user-suggestion-avatar">
         <div class="user-suggestion-data">
           <span class="user-username">{{ user.username }}</span>
           <span class="user-info">Sugestões para você</span>
         </div>
-        <button class="btn">Mudar</button>
+        <!--**********************-->
+        <button class="btn" (click)="seguindo(j)">{{seguir[j]}}</button>
+        <!--***********************-->
       </div>
     </div>
   </div>
