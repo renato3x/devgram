@@ -12,6 +12,7 @@ export class AsideDataComponent {
   userImageSource: string = '../../../assets/img/me.jpg'
   users: User[] = this.generateUsers()
   year: number = new Date().getFullYear()
+  seguir: string[] = this.generateSeguir()
 
   constructor() {}
 
@@ -23,5 +24,19 @@ export class AsideDataComponent {
     }
 
     return users
+  }
+
+  generateSeguir(): string[]{
+    let seguir: string[] = []
+    for (let j = 0; j < this.users.length; j++) {
+      seguir.push('Seguir')
+    } 
+    return seguir 
+  }
+
+  seguindo(i : number) {
+    if(this.seguir[i] == 'Seguir') {
+      this.seguir[i] = 'Seguindo'
+    } else this.seguir[i] = 'Seguir'
   }
 }

@@ -133,3 +133,6 @@ button.post {
     transform: scale(1);
   }
 }
+.comment{
+  margin-top: 3px;
+}

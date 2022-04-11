@@ -6,12 +6,42 @@
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
+  display: flex;
 }
 
+/* Adicionei rolagem no eixo x no container dos stories e aumentei um pouco o max-width, para compensar o aumento que a rolagem causa no container*/
 #stories .stories-container {
   display: flex;
-  max-width: 591px;
-  transition: transform .2s ease-in;
+  max-width: 639px;
+  transition: transform .8s ease-in;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  flex-grow: 1;
+}
+
+/* a baixo as estizações dos botões de rolangem */
+svg{
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  margin-top: 20px;
+  align-self: baseline;
+  justify-self: end;
+
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+
+  border: 1px solid rgba(0, 0, 0, 0.034);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.096);
+  background-color: transparent;
+}
+.rightScroll{
+  margin-left: 600px;
+}
+
+.leftScroll{
+  margin-left: 8px;
 }
 
 #stories .stories-container .story {
@@ -19,7 +49,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 15px;
+  margin-left: 12px;
 }
 
 #stories .stories-container .story + .story {
