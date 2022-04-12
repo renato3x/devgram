@@ -15,7 +15,7 @@ export class PostImageComponent implements OnInit {
   generateImageLink(): string {
     let width = Math.round(Math.random() * 600)
     let height = Math.round(Math.random() * 600)
-    
+
     while (width < 500) {
       width = Math.round(Math.random() * 600)
     }

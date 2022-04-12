@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import * as faker from 'faker'
+import { MudarComponent } from 'src/app/dialog/mudar/mudar.component';
 import { User } from '../../interfaces/user'
 
 @Component({
@@ -13,7 +15,9 @@ export class AsideDataComponent {
   users: User[] = this.generateUsers()
   year: number = new Date().getFullYear()
 
-  constructor() {}
+  constructor(
+    public dialog: MatDialog
+  ) {}
 
   generateUsers() {
     let users: User[] = []
@@ -24,4 +28,18 @@ export class AsideDataComponent {
 
     return users
   }
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(MudarComponent, {
+       
+      
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('Dialog foi fechado');
+      
+    });
+  }
+
+
 }

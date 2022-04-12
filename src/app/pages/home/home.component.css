@@ -12,6 +12,7 @@
   display: grid;
   grid-template-rows: 118px 1fr;
   row-gap: 20px;
+
 }
 
 #home #main-content .posts-container {

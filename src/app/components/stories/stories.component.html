@@ -1,10 +1,33 @@
+<!--
+================
+Escola: SoulCode
+Curso: Java Full Stack
+Turma: BXW13
+Projeto: Devgram
+Professor: Renato (git: Renato3x)
+Grupo 3
+Aluna: Pollyana Oliveira Martins Ferreira (git: PollyanaOliveira1983)
+=================
+Componente: stories.component.html
+TAG de alteração              : Alteração
+<<PollyanaOliveira1983_001C>> : Adição botão "<button mat-mini-fab> " de "voltar" e "ir"
+
+<<PollyanaOliveira1983_002C>> : Formatação da imagem do story"
+=================
+-->
 <div id="stories">
+  <!-- INICIO <<PollyanaOliveira1983_001C>> -->
+  <button mat-mini-fab id="voltar"> < </button>
+  <button mat-mini-fab id="ir"> > </button>
+  <!-- FIM <<PollyanaOliveira1983_001C>> -->
   <div class="stories-container">
-    <div class="story" *ngFor="let user of users">
+   <div class="story" *ngFor="let user of users">
       <div class="story-user-img">
+        <!-- INICIO <<PollyanaOliveira1983_002C>> -->
         <img [src]="user.userImageSource" [alt]="user.userImageSource">
+        <!-- FIM <<PollyanaOliveira1983_002C>> -->
       </div>
       <span class="story-username">{{ user.username }}</span>
-    </div>
+      </div>
   </div>
 </div>
