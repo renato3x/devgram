@@ -1,0 +1,77 @@
+
+img{ 
+    width: 56px;
+  height: 56px;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 50%;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 3px solid #d3d3d36e;
+    height:50px;
+}
+.top h1{
+    margin:0;
+    padding-left: 100px;
+}
+.conta{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    height: 100px;
+    
+}
+.user{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+.conta span{
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+.check{
+    background: #0095f6;
+    border:none;
+    border-radius: 50%;
+    height:20px;
+    width:20px;
+    color:white;
+    
+    font-size: 12px;
+}
+
+.footer{
+    color:#0095f6;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-top: 3px solid #d3d3d36e;
+    height:40px;
+}
+#sair{
+    background: #80808000;
+    border: none;
+    color:#252525;
+    cursor: pointer;
+    height:45px;
+    width: 45px;
+    font-size:20px;
+    
+}
+#novaConta{
+    cursor: pointer;
+}
+.dialog{
+    width: 350px;
+}
