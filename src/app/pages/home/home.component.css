@@ -1,17 +1,17 @@
 #home {
   display: flex;
   flex-direction: row;
-  width: 100vw;
-  justify-content: space-around;
+  width: 80vw;
+  width: 90vw;
+  justify-content: center;
 }
 
 #home #main-content {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 65%;
+  width: 50%;
   padding-right: 30px;
-  padding-left: 20px;
-
 }
 
 #home #main-content .posts-container {

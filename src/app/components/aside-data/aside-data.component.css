@@ -10,9 +10,8 @@
 
 #aside-data {
   height: 100%;
-  width: 100%;
-  padding: 26px 20px 0px 0px;
-  }
+  padding: 20px 0;
+}
 
 .btn {
   border: none;

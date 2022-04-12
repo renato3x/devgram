@@ -40,14 +40,9 @@
         </a>
       </li>
       <li class="navigation-navbar-item">
-          <button class="btn" mat-button [matMenuTriggerFor]="menu"><img  [src]="userImageSource" alt="User image" id="navigation-user-image"></button>
-          <mat-menu #menu="matMenu">
-            <button routerLink="soulcodeacademy" class="lista" mat-menu-item><img class="fonts" src="../assets/img/outline_account_circle_black_24dp.png">Perfil </button>
-            <button class="lista" mat-menu-item><img class="fonts" src="../assets/img/outline_autorenew_black_24dp.png">Salvos </button>
-            <button class="lista" mat-menu-item><img class="fonts" src="../assets/img/outline_settings_black_24dp.png">Configurações </button>
-            <button class="lista" mat-menu-item><img  class="fonts"src="../assets/img/outline_turned_in_not_black_24dp.png">Trocar </button>
-            <button class="lista2" mat-menu-item>Sair</button>
-          </mat-menu>
+        <a  >
+          <img routerLink="soulcodeacademy" [src]="userImageSource" alt="User image" id="navigation-user-image">
+        </a>
       </li>
     </ul>
   </div>
