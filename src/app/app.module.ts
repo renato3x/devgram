@@ -8,14 +8,8 @@ import { AsideDataComponent } from './components/aside-data/aside-data.component
 import { StoriesModule } from './components/stories/stories.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-<<<<<<< HEAD
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
-
-
-
-=======
 import { PerfilComponent } from './components/perfil/perfil.component';
->>>>>>> parent of bd07871 (Adicionando Lazy Loading)
 @NgModule({
   declarations: [
     AppComponent,
