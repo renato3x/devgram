@@ -1,6 +1,60 @@
+.sessao{
+  display: flex;
+  margin-top: 20px;
+ 
+}
+
+.fot{
+ height: 150px;
+ width: 150px;
+ display: flex;
+ border-radius: 200px;
+ margin: 0 20px 0 50px;  
+}
+.ing{
+ height: 30px;
+ width: 30px;
+}
+.inf{
+ display: flex;
+ flex-direction: column;
+ margin: 15px 50px;
+ font-family: Helvetica, arial, sans-serif;
+}
+
+.informacao{
+ display: flex;
+}
+
+.user, .edt, .ing{
+  display: flex;
+  margin: 0 15px;
+}
+.edt{
+  border-radius: 5px;
+  border: 1px solid grey;
+  align-items: center;
+}
+.meio {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.meio1{
+  margin: 0 15px;
+
+}
+.nome{
+  margin-left: 15px;
+}
+.hrzin{
+  margin-bottom: 15px;
+}
+
 .fim1 , .fim2  {
     display:flex;
     justify-content:center;
+    padding: 0;
     }
     
     li {
@@ -12,7 +66,7 @@
       display: flex;
       align-content: center;
       justify-content: center;      
-      margin-bottom: 100px;
+      margin-bottom: 50px;
     }
     
     .container-galeria {
@@ -54,7 +108,7 @@
     }
     
     .main2 {
-      height: 48.43918191603875vh;
+      height: 48.7vh;
       display: flex;
       justify-content: center;
       align-items: center;
