@@ -8,6 +8,7 @@ import { PostModule } from './components/post/post.module';
 import { AsideDataComponent } from './components/aside-data/aside-data.component';
 import { StoriesModule } from './components/stories/stories.module';
 import { FooterComponent } from './components/footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { FooterComponent } from './components/footer/footer.component';
     BrowserModule,
     PostModule,
     StoriesModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
