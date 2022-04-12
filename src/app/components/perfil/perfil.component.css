@@ -11,9 +11,7 @@
     .main {
       display: flex;
       align-content: center;
-      align-items: center;
-      margin-left: 10px;
-      width: 100vh;
+      justify-content: center;      
       margin-bottom: 100px;
     }
     
