@@ -9,7 +9,7 @@ import { User } from '../../interfaces/user'
 })
 export class AsideDataComponent {
 
-  userImageSource: string = '../../../assets/img/soul.png'
+  userImageSource: string = '../../../assets/img/me.jpg'
   users: User[] = this.generateUsers()
   year: number = new Date().getFullYear()
 

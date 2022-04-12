@@ -1,3 +1,4 @@
+import { MatButtonModule } from '@angular/material/button';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -10,20 +11,31 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { PerfilComponent } from './components/perfil/perfil.component';
+import { MenuComponent } from './components/menu/menu.component';
+import {MatMenuModule} from '@angular/material/menu';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
     AsideDataComponent,
-    PerfilComponent
+    PerfilComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
     PostModule,
     StoriesModule,
     AppRoutingModule,
-    InfiniteScrollModule
+    InfiniteScrollModule,
+    MatMenuModule,
+    BrowserAnimationsModule,
+    
+    MatButtonModule,
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
