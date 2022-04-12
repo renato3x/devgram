@@ -29,6 +29,8 @@
   border-radius: 50%;
   cursor: pointer;
   object-fit: cover;
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box, linear-gradient(to right, 	#feda75, #fa7e1e, #d62976) border-box;
 }
 
 #aside-data .user-infos .user-name-infos {

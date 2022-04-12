@@ -26,3 +26,22 @@
   top: 84px;
   height: 500px;
 }
+
+ @media (max-width: 620px) {
+
+  #home {
+    padding: 0;
+    min-height: calc(100vh);
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    box-sizing: border-box;
+    gap: 25px;
+  }
+
+  #home #infos {
+ display: none;
+  }
+
+
+ }

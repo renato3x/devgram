@@ -35,9 +35,9 @@
   background-color: var(--app-background-color);
   outline: none;
   border-radius: 3px;
-  height: 28px;
+  height: 45px;
   font-size: 14px;
-  width: 215px;
+  width: 400px;
   padding: 0 5px;
 }
 
@@ -60,3 +60,26 @@
 #navbar .navigation .navigation-navbar .navigation-navbar-item:last-child {
   margin-right: 0;
 }
+
+@media (max-width: 620px) {
+  #navbar {
+    min-height: 54px;
+    width: 90vw;
+    background: var(--main-background-color);
+    border-bottom: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px ;
+    top: 0;
+    z-index: 10000;
+  }
+ 
+  #navbar .navigation .navigation-navbar {
+    display: none;
+  
+  }
+
+}
+
