@@ -1,24 +1,17 @@
 #home {
   display: flex;
   flex-direction: row;
-<<<<<<< HEAD
   width: 80vw;
-=======
   width: 90vw;
->>>>>>> parent of bd07871 (Adicionando Lazy Loading)
   justify-content: center;
 }
 
 #home #main-content {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   width: 65%;
-=======
   width: 50%;
->>>>>>> parent of bd07871 (Adicionando Lazy Loading)
   padding-right: 30px;
-
 }
 
 #home #main-content .posts-container {
@@ -54,7 +47,5 @@
 
     width: 80%;
   }
-  
-  
   
 }

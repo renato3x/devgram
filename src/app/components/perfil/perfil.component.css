@@ -1,10 +1,72 @@
 .fim1 , .fim2  {
-display:flex;
-justify-content:center;
-}
-
-li {
-list-style: none;
-margin: 0 12px;
-}
-
+    display:flex;
+    justify-content:center;
+    }
+    
+    li {
+    list-style: none;
+    margin: 0 12px;
+    }
+    
+    .main {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      margin-left: 10px;
+      width: 100vh;
+      margin-bottom: 100px;
+    }
+    
+    .container-galeria {
+      display: grid;
+      grid-gap: 1px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 150px;
+      width: 500px;
+    }
+    
+    .item-galeria {
+      position: relative;
+    }
+    
+    .item-galeria .img-galeria {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .item-galeria .tittle-galeria {
+      position: absolute;
+      background-color: rgba(0,0,0,0.8);
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      color: black;
+      padding: 10px;
+      font-size: 16pt;
+    }
+    
+    .container-compartilhe {
+      width: 400px;
+      color: white;
+      display: block;
+      text-align: center;
+      font-size: 10px;
+      margin-left: 20px;
+      padding: 50px;
+    }
+    
+    .main2 {
+      height: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+    }
+    
+    .container-googleplay {
+      display: flex;
+      padding-left: 60px;
+      width: 40px; 
+      height: 50px;
+    }
+    
