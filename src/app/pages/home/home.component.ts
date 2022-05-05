@@ -8,31 +8,57 @@ import * as faker from 'faker'
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+
+  pagina: number = 5
   users: User[] = []
+  contador: number = 0
+
+  obs: ScrollIntoViewOptions | undefined
 
   constructor() {
     faker.setLocale('pt_BR')
-    this.users = this.generateFakeData()
   }
 
+
   generateFakeData() {
-    let quantityOfData = faker.datatype.number(50)
-    let users: User[] = []
 
-    let i = 0
-    while (i < quantityOfData) {
-      users.push({ username: faker.internet.userName().toLowerCase(), userImageSource: `https://i.pravatar.cc/${faker.datatype.number(1000)}` })
-      i++
-    }
+      return ({ username: faker.internet.userName().toLowerCase(), userImageSource: `https://i.pravatar.cc/${faker.datatype.number(1000)}` })
+    
 
-    users.push({
+    /* users.push({
       username: 'renato3x',
       userImageSource: '../assets/img/me.jpg'
-    })
+    }) */
 
-    return users
+    //return users
   }
 
   ngOnInit(): void {
+     let i = 0
+    while(i < 5){
+      this.users.push(this.generateFakeData())
+
+      i++
+    } 
   }
+
+   onScroll(){
+
+     this.contador ++;
+     console.log
+    if(this.contador > 10){
+      this.NewPost()
+      this.contador = 0
+    }
+    
+
+
+
+  }
+
+  NewPost(): void{
+    this.users.push(this.generateFakeData()) 
+  }
+
+  
 }

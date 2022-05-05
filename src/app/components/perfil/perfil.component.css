@@ -1,0 +1,124 @@
+.sessao{
+  display: flex;
+  margin-top: 20px;
+ 
+}
+
+.fot{
+ height: 150px;
+ width: 150px;
+ display: flex;
+ border-radius: 200px;
+ margin: 0 20px 0 50px;  
+}
+.ing{
+ height: 30px;
+ width: 30px;
+}
+.inf{
+ display: flex;
+ flex-direction: column;
+ margin: 15px 50px;
+ font-family: Helvetica, arial, sans-serif;
+}
+
+.informacao{
+ display: flex;
+}
+
+.user, .edt, .ing{
+  display: flex;
+  margin: 0 15px;
+}
+.edt{
+  border-radius: 5px;
+  border: 1px solid grey;
+  align-items: center;
+}
+.meio {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.meio1{
+  margin: 0 15px;
+
+}
+.nome{
+  margin-left: 15px;
+}
+.hrzin{
+  margin-bottom: 15px;
+}
+
+.fim1 , .fim2  {
+    display:flex;
+    justify-content:center;
+    padding: 0;
+    }
+    
+    li {
+    list-style: none;
+    margin: 0 12px;
+    }
+    
+    .main {
+      display: flex;
+      align-content: center;
+      justify-content: center;      
+      margin-bottom: 50px;
+    }
+    
+    .container-galeria {
+      display: grid;
+      grid-gap: 1px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 16.146393972012916vh;
+      width: 53.821313240043054vh;
+    }
+    
+    .item-galeria {
+      position: relative;
+    }
+    
+    .item-galeria .img-galeria {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .item-galeria .tittle-galeria {
+      position: absolute;
+      background-color: rgba(0,0,0,0.8);
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      color: black;
+      padding: 10px;
+      font-size: 16pt;
+    }
+    
+    .container-compartilhe {
+      width: 400px;
+      color: white;
+      display: block;
+      text-align: center;
+      font-size: 10px;
+      margin-left: 20px;
+      padding: 50px;
+    }
+    
+    .main2 {
+      height: 48.7vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+    }
+    
+    .container-googleplay {
+      display: flex;
+      padding-left: 60px;
+      width: 40px; 
+      height: 50px;
+    }
+    
